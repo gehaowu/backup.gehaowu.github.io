@@ -1,0 +1,5 @@
+# robots.txt
+User-agent: *
+Disallow: /*.old/
+Disallow: /Source_*/
+Disallow: /wwwroot_*/
