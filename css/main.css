@@ -1,0 +1,418 @@
+/*
+name: Scrapbook
+description: clean and minilism.
+Copyright (c) 2003-2015 Ruan YiFeng.
+designer_url: http://www.ruanyifeng.com
+Copyright (c) 2015-2015 Haowu Ge.
+designer_url: https://www.gehaowu.com
+*/
+@font-face {
+	font-family: 'SourceHanSansSC';
+  src: url('../fonts/SourceHanSansSC.eot');
+  src:
+    url('../fonts/SourceHanSansSC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SourceHanSansSC.woff') format('woff'),
+    url('../fonts/SourceHanSansSC.ttf') format('truetype'),
+    url('../fonts/SourceHanSansSC.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* CSS Resetting */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li, tt,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: none;
+	font-weight: normal;
+	font-style: normal;
+	border: none;
+	/*color: #111111;*/
+}
+/* Basic Styling */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5d5;
+	font-family: SourceHanSansSC;
+	letter-spacing: -0.01em;
+	word-spacing: 0.2em;
+	/*line-height: 1.8em;*/
+	font-size: 70%;
+	color: #111111;
+	width: 98%;
+}
+
+@media (max-width: 30rem) {
+	body {
+		font-size: 50%;
+	}
+}
+
+h1 {
+	font-size: 2.88em;
+}
+
+@media (max-width: 30rem) {
+	h2 {
+		font-size: 2em;
+	}
+
+}
+
+h3 {
+	font-size: 1.87em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+img {
+	border: 2px solid #00398a;
+}
+
+strong {
+	font-weight: 800;
+}
+
+p,li {
+	font-size: 1.6em;
+	line-height: 220%;
+}
+
+input,textarea {
+	font-size: 1.13em;
+}
+
+select,button {
+	font-size: 1.03em;
+}
+
+/* Container */
+#container {
+	margin: 0 auto;
+	background-color: #f5f5d5;
+	padding: 1em;
+	/*font-size:1.3em;*/ /*调整字体大小*/
+}
+
+body.homepage #container {
+	width: 65%;
+	min-width: 640px;
+	max-width: 960px;
+}
+
+@media (max-width: 48rem) {
+	body.homepage #container {
+		width: 98%;
+		min-width: 0px;
+	}
+}
+
+/* Header */
+#header {
+	width: 95.5%;
+}
+
+#header {
+	border-bottom: 1px solid #d3d3d3;
+	margin: 1em;
+	float: left;
+	height: 5em;
+}
+
+#header h1 {
+	margin-top: 0.9em;
+	font-size: 1.8em;
+	float:left;
+	color: #556677;
+}
+
+#footer img {
+	border: none;
+	width: 1.2em;
+	height: 0.9em;
+}
+
+/* Content */
+#content {
+	clear: both;
+	margin: 1.5em 1em 1em 1em;
+}
+
+#content h1, h2, h3 {
+	margin: 0.4em 0 0.2em 0;
+	padding: 0 0 0.2em 0;
+	color: #000000;
+	font-weight: 900;
+	letter-spacing: -0.03em;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+#content a:link {
+	color: #556677;
+}
+
+#content a:visited {
+	color: #556677;
+}
+
+#content a:hover {
+	color: #665544;
+}
+
+/* One Column Layout*/
+.homepage #alpha {
+	width: 100%;
+}
+
+body.homepage #content #alpha {
+	padding-top: 0.5em;
+}
+
+body.homepage #content #alpha p {
+	margin-top: 1em;
+	line-height: 180%;
+	margin-left: 0.8em;
+}
+
+/* 尾部代码 */
+#footer {
+	margin: 0 1em;
+	border-top: 1px solid #d3d3d3;
+	color: #d3d3d3;
+	padding-top: 0;
+	clear: both;
+	line-height: 1.2;
+}
+
+#footer p {
+	text-align: right;
+	/*margin:0 2em;*/ /*取消右偏移空格*/
+	padding: 0.3em;
+	padding-top: 1em;
+	color: gray;
+	font-size: 1.25em;
+}
+
+/* from base.css */
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0
+}
+
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/pub_0.png);
+	-webkit-transition: All 2s ease;
+	-moz-transition: All 2s ease;
+	-o-transition: All 2s ease;
+	-ms-transition: All 2s ease;
+	transition: All 2s ease;
+}
+
+body.homepage #container {
+	background-color: rgba(0,0,0,0.5); /*主题框灰色*/
+	border-radius: 1.5em;
+	color: #fefefe;
+	overflow: auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: auto;
+	height: auto;
+	max-height: 80%;
+	min-width: 90%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: height 1s ease;
+	transition: top 1s ease;
+}
+
+/*body.homepage #container p,*/
+body.homepage #container a {
+	color: #fefefe;
+	text-shadow: 0 1px 1px #333
+}
+
+body.homepage #container a:hover { /*取消正文鼠标悬停下横线*/
+	color: #fefefe;
+	/*color: #868686;*/ /*灰色*/
+	text-decoration: none;
+}
+
+body.homepage #page-alpha p:hover,
+body.homepage #footer-content a:hover {
+	color: #FFF; /*白色*/
+}
+
+body.homepage #page-alpha p:hover a {
+	color: #E44C03; /*鼠标悬停文字颜色为橙色*/
+}
+
+body.homepage #page-alpha p {
+	/*background-color: rgba(0,0,0,0.5);*//*黑框阴影*/
+	padding: 0.25rem;
+	border-radius: 0.5em;
+	text-shadow: 0 1px 1px #333;
+	margin-bottom: 2em;
+}
+
+body.homepage #page-kiss a {
+	font-size:2.2em;
+	color: #FFF; /*白色*/
+	text-shadow: 0px 0px 10px #02AEFF, 0px 0px 20px #02AEFF, 0px 0px 30px #02AEFF, 0px 0px 40px #02AEFF, 0px 0px 70px #02AEFF, 0px 0px 80px #02AEFF, 0px 0px 100px #02AEFF, 0px 0px 150px #02AEFF;
+}
+
+body.homepage #page-kiss a {
+	font-size:2.2em;
+	color: #FFF; /*白色*/
+}
+
+body.homepage #container h1 {
+	font-size: 1rem;
+	line-height: 90%;
+	color: #fefefe;
+	float: none;
+	margin: auto;
+	padding-top: 0.6rem; /*大标题沉降*/
+	text-align: center;
+	font-weight: bolder;
+	text-shadow: 0 1px 1px #333;
+}
+
+body.homepage #header-content h1 {
+	font-size: 1.3em;
+	line-height: 60%;
+}
+
+body.homepage #header-content:hover h1 { /*取消大标题鼠标悬停下横线*/
+	text-decoration: none;
+}
+
+body.homepage #header-content h1:hover {
+	cursor: pointer;
+}
+
+body.homepage #header-content {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+#up-arrow { /*方向按钮*/
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/up.png);
+	background-color: #fefefe;
+	border-radius: 100%;
+	cursor: n-resize;
+}
+
+body.homepage #container.folded {
+	top: 15px;
+	margin-top: 5px;
+	height: 5px;
+	overflow: hidden;
+}
+
+@media (min-width: 800px){ /*屏幕宽度 >=800px 的设备*/
+	body.homepage #container {
+		min-width: 52%;
+	}
+	body.homepage #container h1 {
+		font-size: 1.3rem;
+		line-height: 50%;
+	}
+}
+
+@media (min-width: 768px){ /*屏幕宽度 >=768px 的设备*/
+	body.homepage #container {
+		min-width: 55%;
+	}
+	body.homepage #container h1 {
+		font-size: 1.2rem;
+		line-height: 50%;
+	}
+}
+
+@media (min-width: 640px){ /*屏幕宽度 >=640px 的设备*/
+	body.homepage #container {
+		min-width: 54%;
+	}
+}
+
+@media (min-width: 1920px){ /*屏幕宽度 >=1920px 的设备*/
+	body.homepage #container {
+		min-width: 23%;
+	}
+	body.homepage #container h1 {
+		font-size: 1.5rem;
+		line-height: 50%;
+	}
+}
+
+@media (min-width: 980px){ /*屏幕宽度 >=980px 的设备*/
+	body.homepage #container {
+		min-width: 50%;
+	}
+	body.homepage #container h1 {
+		font-size: 1.3rem;
+		line-height: 50%;
+	}
+}
+
+@media (min-width: 1280px){ /*屏幕宽度 >=1280px 的设备*/
+	body.homepage #container {
+		min-width: 35%;
+	}
+	body.homepage #container h1 {
+		font-size: 1.4rem;
+		line-height: 50%;
+	}
+}
+
+@media (min-width: 360px){ /*屏幕宽度 >=360px 的设备*/
+	body.homepage #container h1 {
+		line-height: 50%;
+	}
+}
+
+@media (min-width: 320px){ /*屏幕宽度 >=320px 的设备*/
+	body.homepage #container h1 {
+		line-height: 50%;
+	}
+
+}
+
+@media (min-width: 300px){ /*屏幕宽度 >=300px 的设备*/
+	body.homepage #container h1 {
+		line-height: 50%;
+	}
+
+}

@@ -1,0 +1,17 @@
+body.one-column #container {
+	background-color: #f5f5d5;
+	color: #111111;
+	display: absolute;
+	width: 50em;
+	margin: 10% auto;
+	min-width: 0;
+	top: 10%;
+	left: 25%;
+	overflow: hidden;
+}
+
+body.one-column #container h1,
+body.one-column #container p,
+body.one-column #container a {
+	color: #111111;
+}
