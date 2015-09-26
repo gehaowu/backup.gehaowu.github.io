@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /profiles/
+Disallow: /r/
+Disallow: /resume/
+Allow: /
+Sitemap: https://www.gehaowu.com/notes/sitemap.xml
+Sitemap: https://www.gehaowu.com/notes/baidusitemap.xml
