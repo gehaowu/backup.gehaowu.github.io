@@ -51,13 +51,6 @@ body {
 body.loading * {
 -webkit-animation: none !important;
 animation: none !important;
-position: fixed;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-z-index: 9999;
-background: url(../images/loader.gif) center no-repeat #fff;
 }
 .preload {
 	display: none;
