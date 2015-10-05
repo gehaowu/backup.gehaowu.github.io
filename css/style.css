@@ -49,8 +49,8 @@ body {
 	overflow: hidden;
 }
 body.loading * {
--webkit-animation: none !important;
-animation: none !important;
+	-webkit-animation: none !important;
+	animation: none !important;
 }
 .preload {
 	display: none;
